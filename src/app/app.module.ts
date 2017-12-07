@@ -4,11 +4,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './common/material.module';
 import { AppComponent } from './app.component';
+import { LikeButtonComponent } from './like-button/like-button.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LikeButtonComponent
   ],
   imports: [
     BrowserModule,
