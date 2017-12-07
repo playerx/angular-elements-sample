@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import {
   MatButtonModule,
   MatToolbarModule,
-  MatCardModule
+  MatCardModule,
 } from '@angular/material';
 
 
