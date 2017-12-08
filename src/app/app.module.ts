@@ -5,6 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './common/material.module';
 import { AppComponent } from './app.component';
 import { LikeButtonComponent } from './like-button/like-button.component';
+import { Page1Component } from './page1/page1.component';
+import { Page2Component } from './page2/page2.component';
 
 export const webComponents = [
   AppComponent,
@@ -14,7 +16,9 @@ export const webComponents = [
 
 @NgModule({
   declarations: [
-    ...webComponents
+    ...webComponents,
+    Page1Component,
+    Page2Component
   ],
   entryComponents: [
     ...webComponents
