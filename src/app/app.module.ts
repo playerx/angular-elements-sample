@@ -6,18 +6,26 @@ import { MaterialModule } from './common/material.module';
 import { AppComponent } from './app.component';
 import { LikeButtonComponent } from './like-button/like-button.component';
 
+export const webComponents = [
+  AppComponent,
+  LikeButtonComponent
+];
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LikeButtonComponent
+    ...webComponents
+  ],
+  entryComponents: [
+    ...webComponents
   ],
   imports: [
     BrowserModule,
-    MaterialModule,
     BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  ngDoBootstrap() { }
+}
