@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --sourcemap=false --vendor-chunk=false --common-chunk=false",
+    "build": "ng build --sourcemap=false --vendor-chunk=false --common-chunk=false",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

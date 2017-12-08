@@ -1,3 +1,5 @@
+import './polyfills';
+
 import { enableProdMode, destroyPlatform, Type, NgModuleFactory, CompilerFactory } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { registerAsCustomElements } from '@angular/elements';
