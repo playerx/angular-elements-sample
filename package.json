@@ -4,8 +4,9 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --sourcemap=false --vendor-chunk=false --common-chunk=false",
-    "build": "ng build --sourcemap=false --vendor-chunk=false --common-chunk=false",
+    "start": "ng serve --sourcemap=false --vendor-chunk=true --common-chunk=false",
+    "build": "ng build --prod --sourcemap=false --vendor-chunk=true --common-chunk=false",
+    "deploy": "yarn build && now ./dist -p",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
