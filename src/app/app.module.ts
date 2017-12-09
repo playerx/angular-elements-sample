@@ -17,13 +17,13 @@ export const webComponents = [
   ModuleShellComponent,
   Page1Component,
   Page2Component,
-  LikeButtonComponent
+  LikeButtonComponent,
+  AppComponent,
 ];
 
 
 @NgModule({
   declarations: [
-    AppComponent,
     ...webComponents,
   ],
   entryComponents: [
@@ -38,8 +38,7 @@ export const webComponents = [
   providers: [
     { provide: LocationStrategy, useClass: MockLocationStrategy }
   ],
-  bootstrap: [
-    AppComponent
-  ]
 })
-export class AppModule { }
+export class AppModule {
+  ngDoBootstrap() { }
+}
