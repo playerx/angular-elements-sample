@@ -11,18 +11,20 @@ import { LikeButtonComponent } from './like-button/like-button.component';
 import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
 import { routes } from 'app/routes';
+import { ModuleShellComponent } from './module-shell/module-shell.component';
 
 export const webComponents = [
-  AppComponent,
+  ModuleShellComponent,
+  Page1Component,
+  Page2Component,
   LikeButtonComponent
 ];
 
 
 @NgModule({
   declarations: [
+    AppComponent,
     ...webComponents,
-    Page1Component,
-    Page2Component,
   ],
   entryComponents: [
     ...webComponents
@@ -36,7 +38,8 @@ export const webComponents = [
   providers: [
     { provide: LocationStrategy, useClass: MockLocationStrategy }
   ],
+  bootstrap: [
+    AppComponent
+  ]
 })
-export class AppModule {
-  ngDoBootstrap() { }
-}
+export class AppModule { }
