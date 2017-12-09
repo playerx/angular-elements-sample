@@ -1,11 +1,13 @@
 {
   "name": "angular-elements-sample",
+  "alias": "angular-elements-sample",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --sourcemap=false --vendor-chunk=true --common-chunk=false",
     "build": "ng build --prod --sourcemap=false --vendor-chunk=true --common-chunk=false",
+    "alias": "cd ./dist && now alias",
     "deploy": "yarn build && now ./dist -p",
     "test": "ng test",
     "lint": "ng lint",
