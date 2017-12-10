@@ -14,6 +14,10 @@ mat-toolbar {
 	top: 0;
 }
 
+button.themeButton {
+	min-width: 120px;
+}
+
 mat-card {
 	max-width: 1000px;
 	margin-left: auto;

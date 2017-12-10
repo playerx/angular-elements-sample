@@ -49,16 +49,23 @@
      target="blank">https://angular-webcomponents-usage-sample.now.sh/</a>
 </mat-card>
 <mat-card>
+  <h2>Theme:</h2>
+  <p>@angular/material/prebuilt-themes/indigo-pink.css</p>
+  <button mat-raised-button
+          class=themeButton
+          color=primary>Primary Color</button>
+  <br/>
+  <br/>
+  <button mat-raised-button
+          class=themeButton
+          color=accent>Accent Color</button>
+</mat-card>
+<mat-card>
   <button mat-raised-button
           routerLink="/page1">Page 1</button>
   <button mat-raised-button
           routerLink="/page2">Page 2</button>
-
-  <button mat-raised-button
-          color=primary>
-    Button with primary color
-  </button>
-  <h2>Loaded Page Content: </h2>
+  <h2>Loaded Page Content:</h2>
   <hr/>
   <router-outlet></router-outlet>
 </mat-card>
