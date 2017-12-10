@@ -18,4 +18,8 @@ export class AppComponent implements OnInit {
     this.router.navigate(['/page1']);
   }
 
+  openGithub() {
+    window.open('https://github.com/playerx/angular-elements-sample');
+  }
+
 }
