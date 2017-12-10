@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-module-shell',
   templateUrl: './module-shell.component.html',
-  styleUrls: ['./module-shell.component.scss']
+  styleUrls: ['./module-shell.component.scss'],
 })
 export class ModuleShellComponent implements OnInit {
 

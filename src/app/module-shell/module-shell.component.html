@@ -1,18 +1,16 @@
-<mat-toolbar color=primary>
-  <span>Module Shell (Web Component)</span>
-</mat-toolbar>
-<p>
-  module-shell works!
-</p>
+<main>
+  <p>
+    Hello from another angular app!
+  </p>
 
+  <button mat-raised-button
+          routerLink="/page1">Page 1</button>
+  <button mat-raised-button
+          routerLink="/page2">Page 2</button>
 
-<button mat-raised-button
-        routerLink="/page1">Page 1</button>
-<button mat-raised-button
-        routerLink="/page2">Page 2</button>
+  <app-like-button likes="123"></app-like-button>
 
-<app-like-button likes="123"></app-like-button>
-
-<h2>Loaded Page Content: </h2>
-<hr/>
-<router-outlet></router-outlet>
+  <h2>Loaded Page Content: </h2>
+  <hr/>
+  <router-outlet></router-outlet>
+</main>

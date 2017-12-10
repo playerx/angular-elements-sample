@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --sourcemap=false --vendor-chunk=true --common-chunk=false",
+    "start": "ng serve --port=4201 --sourcemap=false --vendor-chunk=true --common-chunk=false",
     "build": "ng build --prod --sourcemap=false --vendor-chunk=true --common-chunk=false --output-hashing none",
     "alias": "cd ./dist && now alias",
     "deploy": "yarn build && now ./dist -p",

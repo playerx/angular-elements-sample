@@ -10,7 +10,6 @@
       "assets": [
         "assets",
         "favicon.ico",
-        "modules.html",
         "now.json"
       ],
       "index": "index.html",
