@@ -11,10 +11,12 @@
     "deploy": "yarn build && now ./dist -p",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "demo": "http-server demo"
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/core": "^0.4.5",
     "@angular/animations": "^5.1.0",
     "@angular/cdk": "^5.0.0",
     "@angular/common": "^5.0.0",
